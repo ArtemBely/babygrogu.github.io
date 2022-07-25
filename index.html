@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acorn</title>
+    <link rel="stylesheet" href="./styles/style1.css" />
+  </head>
+  <body>
+    <div class="wrap_content">
+      <div class="content hideContent" id='content'>
+        <div class="leftContent">
+            <div class="leftContentInside">
+                  <p class="wrap_for_logo"><img src="./images/Logo.svg" id='logo'></p>
+                  <div class="wrap_newLook"><p class="newLook">New Look at Growing Your Business</p></div>
+                  <div class="wrap_lookBelow"><p class="lookBelow">We help companies from around the world develop visual communications and create reliable connections with their customers</p></div>
+                  <div class="wrap_discussButton"><div class="discussButton discussActive" id='discuss'>Discuss your project</div></div>
+                  <div class="privacy">
+                  <p></p>
+                  <a href="#" class="privacyLink"><p>Privacy Policy</p></a><p class="year">© 2022</p>
+            </div>
+            </div>
+        </div>
+        <div class="centerContent hideCentral" id='center'>
+            <div class="centerContentInside">
+                  <p class="book_center">Book a consultation to discuss your project</p>
+                  <form class="mainForm" action="index.html" method="post">
+                        <p class="titles">Your Name</p>
+                        <input type="text" name="name"  class="all_inputs" placeholder="Johnson Smith" required>
+                        <p class="titles">Choose a communication method</p>
+                        <p id='selectArrow'> <img src="./images/Rectangle 2.svg" alt=""> </p>
+                        <select name="typeOfCommunication" class="all_inputs" id='selectField' required>
+                            <option value="Email">Email</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="Telegram">Telegram</option>
+                            <option value="Viber">Viber</option>
+                        </select>
+                        <p class="titles" id='methodOfCommunication'>Your Email</p>
+                        <input type="text" name="email" id='typeOfPlaceholder' class="all_inputs" placeholder="JohnsonSmith@acme.com" required>
+                        <p class="titles">Comment</p>
+                        <input type="text" name="comment"  class="all_inputs" placeholder="I am in anticipation of our work!" required>
+                        <div class="wrap_check_fields"><p class="wrap_check">
+                            <input type="checkbox" id='check' /></p>
+                            <span id='agree_txt'>I agree with the Privacy Policy</span>
+                        </div>
+                        <div class="wrap_schedule">
+                            <div class="schedule">
+                                  Schedule Event
+                            </div>
+                        </div>
+                  </form>
+            </div>
+        </div>
+        <div class="rightContent">
+            <div class="rightContentInside">
+
+              <a href="#" class="link_open">
+                  <div class="open_btn">Open a portfolio</div>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  <script src="./scripts/script1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'Inter-LightBETA';
+    font-display: swap;
+    src: url('../fonts/Inter-LightBETA.eot');
+    src: url('../fonts/Inter-LightBETA.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Inter-LightBETA.woff') format('woff'),
+    url('../fonts/Inter-LightBETA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter-Regular';
+    font-display: swap;
+    src: url('../fonts/Inter-Regular.eot');
+    src: url('../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Inter-Regular.woff') format('woff'),
+    url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    font-display: swap;
+    src: url('../fonts/Inter-Bold.eot');
+    src: url('../fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Inter-Bold.woff') format('woff'),
+    url('../fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #F6F6F6;
+  font-family: 'Inter-Regular';
+}
+#logo {
+  width: 158px;
+}
+.leftContentInside {
+  height: 980px;
+  z-index: 1000;
+}
+.leftContent {
+  display: grid;
+  justify-content: center;
+  border-right: 15px solid #eeeeee;
+  align-items: center;
+}
+.centerContent {
+  border-right: 15px solid;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-right: 15px solid #eeeeee;
+}
+.rightContent {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/Component1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 4px 6px rgb(0 0 0 / 6%);
+}
+select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+.mainForm {
+  position: relative;
+}
+#selectArrow {
+  position: absolute;
+  left: 472px;
+  top: 193px;
+}
+.rightContentInside {
+  display: flex;
+  align-items: flex-end;
+  height: 980px;
+}
+.newLook {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  text-align: center;
+  color: #000628;
+  width: 450px;
+  font-family: 'Inter-Bold';
+}
+.lookBelow {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #000628;
+  width: 510px;
+}
+.wrap_newLook {
+    position: relative;
+    top: 244px;
+}
+.wrap_lookBelow {
+  position: relative;
+  top: 190px;
+}
+.wrap_discussButton {
+  position: relative;
+  top: 195px;
+}
+.discussButton {
+  width: 288px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #5200FF;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  color: #5200FF;
+  background: transparent;
+}
+.discussButton:hover {
+    transform: scale(1.01);
+    box-shadow: inset 0px 0px 20px #DBCAFF;
+}
+.discussActive {
+  color: white;
+  background: #5200FF;
+  transform: scale(1.01);
+}
+.privacyLink {
+  text-decoration-color: #000628;
+}
+.privacyLink > p, .year {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000628;
+}
+.wrap_for_logo {
+  margin: 0;
+}
+.wrap_newLook, .wrap_lookBelow, .wrap_discussButton, .wrap_for_logo {
+  display: flex;
+  justify-content: center;
+}
+.privacy {
+  display: grid;
+  grid-template-columns: 158px 139px 167px;
+  position: relative;
+  top: 509px;
+}
+.content {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  background: #f6f6f6;
+  grid-template-columns: 630px 630px 1fr;
+}
+.hideCentral {
+  z-index: -1000;
+  position: relative;
+  transform: translateX(-1630px);
+}
+.hideContent {
+  grid-template-columns: 630px 1px 1fr;
+}
+.book_center {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  text-align: center;
+  color: #000628;
+  font-family: 'Inter-Bold';
+  margin: 0;
+  position: relative;
+  top: -11px;
+  left: 64px;
+  margin-bottom: 40px;
+  width: 380px;
+}
+.centerContentInside {
+  height: 980px;
+}
+.titles {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000628;
+    margin-bottom: 14px;
+    margin-top: 30px;
+  }
+#agree_txt {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000628;
+}
+.all_inputs {
+  width: 480px;
+  height: 66px;
+  border: 1px solid #5200FF;
+  color: #5200FF;
+  border-radius: 8px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  background: transparent;
+  cursor: pointer;
+}
+ .all_inputs::placeholder {
+   color: #5200FF;
+ }
+#selectField {
+      width: 514px;
+}
+.wrap_check {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  border: 1px solid #5200FF;
+  grid-column: 2 / 3;
+}
+.fullColor {
+  background: #5200FF;
+}
+.wrap_check > input {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+}
+.wrap_check_fields {
+  display: grid;
+  grid-template-columns: 1fr 21px 229px 1fr;
+  grid-gap: 11px;
+  position: relative;
+  top: 50px;
+}
+.wrap_schedule {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.schedule {
+  width: 510px;
+  height: 70px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  background: #5200FF;
+  border-radius: 8px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  top: 218px;
+  transition: 0.2s;
+}
+.schedule:hover {
+    transform: scale(1.01);
+}
+.link_open {
+  text-decoration: none;
+  position: relative;
+  top: -75px;
+}
+.open_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 364px;
+  height: 131px;
+  left: calc(50% - 364px/2 - 0.5px);
+  bottom: 119.67px;
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+.rotateArrow {
+  transform: rotate(180deg);
+}
