@@ -38,8 +38,13 @@ body {
   width: 158px;
 }
 .leftContentInside {
-  height: 980px;
+  height: 100vh;
   z-index: 1000;
+  display: grid;
+  align-items: center;
+  min-height: 950px;
+  justify-content: center;
+  grid-template-rows: 30% 40% 30%;
 }
 .leftContent {
   display: grid;
@@ -53,6 +58,14 @@ body {
   justify-content: center;
   align-items: center;
   border-right: 15px solid #eeeeee;
+  z-index: 1;
+  position: relative;
+
+}
+.hideCentral {
+  z-index: -1;
+  position: relative;
+  transform: translateX(-1630px);
 }
 .rightContent {
   display: grid;
@@ -62,6 +75,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0px 0px 4px 6px rgb(0 0 0 / 6%);
+  position: relative;
+  overflow: hidden;
 }
 select {
     -moz-appearance:none; /* Firefox */
@@ -70,11 +85,12 @@ select {
 }
 .mainForm {
   position: relative;
+  top: -30px;
 }
 #selectArrow {
   position: absolute;
   left: 472px;
-  top: 193px;
+  top: 223px;
 }
 .rightContentInside {
   display: flex;
@@ -88,6 +104,7 @@ select {
   text-align: center;
   color: #000628;
   width: 450px;
+  margin: 0;
   font-family: 'Inter-Bold';
 }
 .lookBelow {
@@ -100,15 +117,13 @@ select {
 }
 .wrap_newLook {
     position: relative;
-    top: 244px;
 }
 .wrap_lookBelow {
   position: relative;
-  top: 190px;
+  top: -7px
 }
 .wrap_discussButton {
   position: relative;
-  top: 195px;
 }
 .discussButton {
   width: 288px;
@@ -120,13 +135,13 @@ select {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.2s;
-
   color: #5200FF;
   background: transparent;
 }
 .discussButton:hover {
     transform: scale(1.01);
     box-shadow: inset 0px 0px 20px #DBCAFF;
+    border: 1px solid #f6f6f6 !important;
 }
 .discussActive {
   color: white;
@@ -142,9 +157,7 @@ select {
   line-height: 18px;
   color: #000628;
 }
-.wrap_for_logo {
-  margin: 0;
-}
+
 .wrap_newLook, .wrap_lookBelow, .wrap_discussButton, .wrap_for_logo {
   display: flex;
   justify-content: center;
@@ -152,8 +165,16 @@ select {
 .privacy {
   display: grid;
   grid-template-columns: 158px 139px 167px;
-  position: relative;
-  top: 509px;
+
+}
+#smallFone {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: auto;
+}
+.displayBlock {
+  display: block !important;
 }
 .content {
   width: 100%;
@@ -162,11 +183,6 @@ select {
   justify-content: center;
   background: #f6f6f6;
   grid-template-columns: 630px 630px 1fr;
-}
-.hideCentral {
-  z-index: -1000;
-  position: relative;
-  transform: translateX(-1630px);
 }
 .hideContent {
   grid-template-columns: 630px 1px 1fr;
@@ -180,13 +196,22 @@ select {
   font-family: 'Inter-Bold';
   margin: 0;
   position: relative;
-  top: -11px;
+  top: 19px;
   left: 64px;
-  margin-bottom: 40px;
   width: 380px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .centerContentInside {
-  height: 980px;
+  height: 100vh;
+  display: grid;
+  min-height: 950px;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 30% 40% 30%;
 }
 .titles {
     font-weight: 400;
@@ -272,7 +297,6 @@ select {
   align-items: center;
   position: relative;
   cursor: pointer;
-  top: 218px;
   transition: 0.2s;
 }
 .schedule:hover {

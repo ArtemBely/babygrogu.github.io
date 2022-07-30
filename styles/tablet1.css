@@ -1,0 +1,67 @@
+@media (min-width: 1290px) and (max-width: 2000px) {
+  .content {
+        grid-template-columns: 430px 430px 1fr;
+  }
+  .hideContent {
+    grid-template-columns: 430px 1px 1fr !important;
+  }
+  .newLook {
+    font-size: 27px;
+    line-height: 121%;
+    width: 310px;
+  }
+  .lookBelow {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 127%;
+    text-align: center;
+    color: #000628;
+    width: 300px;
+}
+.open_btn {
+      font-size: 23px;
+      height: 117px;
+}
+.discussButton {
+      height: 58px;
+}
+.privacy {
+      grid-template-columns: 102px 139px 167px;
+}
+.book_center {
+  font-size: 27px;
+  line-height: 121%;
+  width: 310px;
+  top: 10px;
+  left: 60px;
+}
+.schedule {
+  width: 363px;
+  height: 60px;
+}
+.titles {
+      left: -33px;
+      font-size: 20px;
+      position: relative;
+}
+.wrap_check_fields {
+  left: -33px;
+}
+.mainForm {
+  width: 430px;
+  left: 34px;
+}
+#selectField {
+    width: 363px;
+    height: 60px;
+}
+#selectArrow {
+    left: 321px;
+    top: 210px;
+}
+.all_inputs {
+  width: 329px;
+  height: 56px;
+  font-size: 16px;
+}
+}
