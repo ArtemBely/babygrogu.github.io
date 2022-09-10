@@ -3,7 +3,7 @@ var center = document.querySelector('#center');
 var content = document.querySelector('#content');
 var rightContent = document.querySelector('.rightContent');
 var smallFone = document.querySelector('#smallFone');
-discuss.addEventListener('click', () => {
+/*discuss.addEventListener('click', () => {
   if(discuss.classList.contains('discussActive')) {
     discuss.classList.remove('discussActive');
     center.classList.remove('hideCentral');
@@ -22,7 +22,7 @@ discuss.addEventListener('click', () => {
     smallFone.classList.remove('displayBlock');
     rightContent.style.backgroundImage = "url('images/Component1.png')";
   }
-});
+});*/
 var check = document.querySelector('#check');
 var wrap_check = document.querySelector('.wrap_check');
 check.addEventListener('change', () => {

@@ -1,0 +1,62 @@
+@media (min-width: 320px) and (max-width: 576px) {
+  .content {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .newLook {
+    width: 300px;
+  }
+  #logo {
+    width: 105px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.leftContent {
+  border: none;
+}
+.rightContent, .hideCentral {
+  display: none;
+}
+.lookBelow {
+      width: 300px;
+}
+.leftContentInside {
+  height: 100vh;
+}
+.wrap_for_logo {
+  margin: 0;
+}
+.mainForm {
+    top: 113px;
+}
+.privacy {
+  position: relative;
+}
+.wrap_schedule {
+  position: relative;
+  top: 340px;
+}
+.titles {
+  width: 320px;
+}
+.discussButton {
+  width: 300px;
+}
+.book_center {
+  left: 0px;
+  width: 320px;
+  font-size: 26px;
+}
+.all_inputs {
+  width: 266px;
+  height: 70px;
+}
+#selectField, .schedule {
+    width: 300px;
+}
+#selectArrow {
+    position: absolute;
+    left: 254px;
+    top: 260px;
+}
+}
